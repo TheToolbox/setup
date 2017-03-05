@@ -7,3 +7,5 @@ cd $HOME
 git clone https://github.com/TheToolbox/setup.git
 
 cp setup/.bash* .
+rm setup/*
+rmdir setup
