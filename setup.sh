@@ -6,5 +6,6 @@ echo "Moving to homedir"
 cd $HOME
 git clone https://github.com/TheToolbox/setup.git
 
-cp setup/.bash* .
+cp setup/.bashrc .
+cp setup/.bash_aliases .
 rm -rf $HOME/setup
