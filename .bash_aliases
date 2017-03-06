@@ -52,4 +52,6 @@ alias apacheLogs="less +F /var/log/apache2/error_log"   # Apachelogs:   Shows ap
 alias cddev="cd /mnt/c/Users/Jason/development"
 
 #update Stuff
-alias update="sudo apt-get update && sudo apt-get dist-upgrade && sudo apt-get autoremove && sudo apt-get autoclean"
+alias update="sudo apt-get update && sudo apt-get -y dist-upgrade && sudo apt-get autoremove && sudo apt-get autoclean"
+alias install="sudo apt-get install"
+
