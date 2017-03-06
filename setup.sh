@@ -8,4 +8,4 @@ cd $HOME && \
 git clone https://github.com/TheToolbox/setup.git && \
 cp setup/.bashrc . && \
 cp setup/.bash_aliases . && \
-rm -rf $HOME/setup && \
+rm -rf $HOME/setup 
