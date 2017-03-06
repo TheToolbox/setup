@@ -55,3 +55,16 @@ alias cddev="cd /mnt/c/Users/Jason/development"
 alias update="sudo apt-get update && sudo apt-get -y dist-upgrade && sudo apt-get autoremove && sudo apt-get autoclean"
 alias install="sudo apt-get install"
 
+#lash
+lash() {
+    argz=($@); # get array of arguments
+    argz="${argz[@]:1}" # get all the arguments but the first one (to pass on to ssh)
+    keyfile="$HOME/.$1.temp.key" && # setup keyfile name
+    # ssh requires keys to be in files, as opposed to in arguments, as `ps` and others would leak the credentials
+    rm $keyfile 2> /dev/null; # ensure the keyfile is gone
+    touch $keyfile && # recreate the keyfile file
+    chmod 700 $keyfile && # make sure the correct file permissions before storing it
+    lpass show --field='Private Key' $1 > $keyfile && # use the awesome lastpass cli to pull down the private key
+    ssh -i $keyfile $argz # actually ssh!
+    rm $keyfile # get rid of the file when done
+}
