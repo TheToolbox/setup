@@ -17,4 +17,4 @@ sudo apt-get -y install openssl libcurl4-openssl-dev libxml2 libssl-dev libxml2-
 git clone https://github.com/lastpass/lastpass-cli.git &&
 cd lastpass-cli &&
 cmake . && make &&
-sudo make install &&
+sudo make install 
