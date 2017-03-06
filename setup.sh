@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing git" &&
-sudo apt-get install git -y &&
+sudo apt-get install -y git &&
 echo "Moving to homedir" &&
 cd $HOME &&
 git clone https://github.com/TheToolbox/setup.git &&
