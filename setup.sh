@@ -10,6 +10,7 @@ git clone https://github.com/TheToolbox/setup.git &&
 
 cp setup/.bashrc . && 
 cp setup/.bash_aliases . && 
+cp setup/.gitconfig
 rm -rf $HOME/setup 
 
 #set up lastpass cli
