@@ -19,6 +19,7 @@ git clone https://github.com/lastpass/lastpass-cli.git &&
 cd lastpass-cli &&
 cmake . && make &&
 sudo make install 
+cd ..
 rm -rf lastpass-cli
 
 echo "Setup complete."
