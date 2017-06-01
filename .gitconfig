@@ -1,7 +1,7 @@
 [user]
-        name = Jason 'Toolbox' Oettinger
-        email = jason@oettinger.email
+  name = Jason 'Toolbox' Oettinger
+  email = jason@oettinger.email
 [push]
-        default = simple
+  default = simple
 [alias]  
   hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
