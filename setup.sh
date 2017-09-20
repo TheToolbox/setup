@@ -2,7 +2,7 @@
 
 echo "Installing git" && 
 sudo apt-get update && 
-sudo apt-get -y install git software-properties-common apt-transport-https && 
+sudo apt-get -y install git && 
 
 echo "Moving to homedir" && 
 cd $HOME && 
@@ -23,7 +23,7 @@ cd ..
 rm -rf lastpass-cli
 
 #install docker
-sudo apt-get install \
+sudo apt-get -y install \
     apt-transport-https \
     ca-certificates \
     curl \
