@@ -2,7 +2,7 @@
 
 echo "Installing git" && 
 sudo apt-get update && 
-sudo apt-get -y install git software-properties-common && 
+sudo apt-get -y install git software-properties-common apt-transport-https && 
 
 echo "Moving to homedir" && 
 cd $HOME && 
